@@ -2,33 +2,115 @@
 
 
 
-A Python-based AI-powered research system that uses multiple agents to search, analyze, and summarize information from the web.
+An AI-powered research assistant built using LangChain and multiple specialized agents that collaborate to search, analyze, and summarize information from the web.
 
 
 
-\## Overview
+\## Project Overview
 
 
 
-This project demonstrates how multiple AI agents can collaborate to perform research tasks. Each agent has a specific responsibility, such as searching for information, extracting relevant content, analyzing findings, and generating structured outputs.
+The Multi-Agent Research System demonstrates how autonomous AI agents can work together to perform complex research tasks. Instead of relying on a single model call, the system divides responsibilities among multiple agents, creating a more structured and scalable workflow.
 
 
 
-\## Features
+This project showcases practical applications of Generative AI, Agentic AI, Prompt Engineering, and Information Retrieval.
 
 
 
-\- Multi-agent architecture
+\## Key Features
 
-\- Web search integration using Tavily
 
-\- Content extraction using BeautifulSoup
 
-\- Automated research workflow
+\* Multi-agent architecture
 
-\- Modular and extensible design
+\* Automated web research workflow
 
-\- Environment variable support with python-dotenv
+\* Real-time information retrieval
+
+\* Content extraction and processing
+
+\* Structured research output generation
+
+\* Modular and extensible design
+
+\* Environment variable management using python-dotenv
+
+
+
+\## Architecture
+
+
+
+User Query
+
+↓
+
+Research Agent
+
+↓
+
+Web Search Tool (Tavily)
+
+↓
+
+Content Extraction (BeautifulSoup)
+
+↓
+
+Analysis Agent
+
+↓
+
+Final Research Report
+
+
+
+\## Tech Stack
+
+
+
+\### Programming Language
+
+
+
+\* Python
+
+
+
+\### AI \& Agent Frameworks
+
+
+
+\* LangChain
+
+
+
+\### Search \& Retrieval
+
+
+
+\* Tavily Search API
+
+
+
+\### Web Processing
+
+
+
+\* BeautifulSoup4
+
+\* Requests
+
+
+
+\### Utilities
+
+
+
+\* Python Dotenv
+
+\* Rich
 
 
 
@@ -42,17 +124,17 @@ MULTI-AGENT-SYSTEM/
 
 │
 
-├── agents.py          # Agent definitions
+├── agents.py          # AI agent definitions
 
-├── app.py             # Main application
+├── app.py             # Main application entry point
 
-├── pipeline.py        # Research workflow pipeline
+├── pipeline.py        # Multi-agent workflow orchestration
 
 ├── tools.py           # Search and utility tools
 
-├── requirements.txt   # Dependencies
+├── requirements.txt   # Project dependencies
 
-├── tree.txt           # Project structure
+├── README.md
 
 └── .gitignore
 
@@ -60,29 +142,11 @@ MULTI-AGENT-SYSTEM/
 
 
 
-\## Technologies Used
-
-
-
-\- Python
-
-\- LangChain
-
-\- Tavily Search API
-
-\- BeautifulSoup4
-
-\- Python Dotenv
-
-\- Rich
-
-
-
 \## Installation
 
 
 
-\### Clone the Repository
+\### Clone Repository
 
 
 
@@ -108,11 +172,11 @@ python -m venv .venv
 
 
 
-\### Activate Virtual Environment
+\### Activate Environment
 
 
 
-\*\*Windows\*\*
+Windows:
 
 
 
@@ -124,7 +188,7 @@ python -m venv .venv
 
 
 
-\*\*Linux / Mac\*\*
+Linux/Mac:
 
 
 
@@ -152,19 +216,19 @@ pip install -r requirements.txt
 
 
 
-Create a `.env` file in the project root directory:
+Create a `.env` file:
 
 
 
 ```env
 
-TAVILY\_API\_KEY=your\_tavily\_api\_key
+TAVILY\_API\_KEY=your\_api\_key\_here
 
 ```
 
 
 
-\## Run the Application
+\## Running the Project
 
 
 
@@ -176,37 +240,55 @@ python app.py
 
 
 
-\## Workflow
+\## Skills Demonstrated
 
 
 
-1\. User enters a research topic.
+\* Agentic AI Development
 
-2\. Search Agent gathers information from the web.
+\* Large Language Model Integration
 
-3\. Analysis Agent processes and evaluates the data.
+\* LangChain Framework
 
-4\. The system generates organized research findings.
+\* Information Retrieval Systems
 
-5\. Results are displayed to the user.
+\* API Integration
+
+\* Prompt Engineering
+
+\* Python Development
+
+\* Modular Software Design
+
+\* Research Automation
 
 
 
-\## Future Improvements
+\## Potential Enhancements
 
 
 
-\- Memory-enabled agents
+\* Memory-enabled agents
 
-\- PDF report generation
+\* Streamlit web interface
 
-\- Streamlit web interface
+\* Vector database integration
 
-\- Vector database integration
+\* Retrieval-Augmented Generation (RAG)
 
-\- Advanced RAG pipeline
+\* PDF report generation
 
-\- Multi-modal research capabilities
+\* Multi-modal research capabilities
+
+\* Agent monitoring and evaluation dashboard
+
+
+
+\## Why This Project Matters
+
+
+
+Traditional AI applications rely on a single model response. This project demonstrates a modern agent-based approach where specialized AI agents collaborate to solve research tasks more effectively. It highlights concepts increasingly used in production AI systems and enterprise GenAI applications.
 
 
 
@@ -214,7 +296,7 @@ python app.py
 
 
 
-\*\*Preeti Kumari\*\*
+Preeti Kumari
 
 
 
@@ -226,5 +308,7 @@ GitHub: https://github.com/preetikumari23
 
 
 
-This project is licensed under the MIT License.
+MIT License
+
+
 
