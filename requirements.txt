@@ -1,0 +1,58 @@
+# Core LLM
+mistral-sdk
+python-dotenv
+
+# LangChain Ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-mistralai
+
+# Streamlit UI
+streamlit
+
+# LangGraph
+langgraph
+
+# Search Tool
+tavily-python
+
+# Web Scraping
+beautifulsoup4
+requests
+lxml
+
+# React Agent Support
+langchainhub
+
+# Data Validation
+pydantic
+
+# Token Counting
+tiktoken
+
+# Async HTTP
+httpx
+aiohttp
+
+# Utilities
+tenacity
+typing-extensions
+
+# Environment & Config
+pyyaml
+
+# Logging & Monitoring
+langsmith
+
+# Optional Output Formatting
+rich
+
+# Notebook Support (Optional)
+jupyter
+
+# Parsing and Text Processing
+html2text
+
+# Runnable / LCEL support
+langchain-core>=0.3.0
